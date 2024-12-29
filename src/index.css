@@ -4,6 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .home-section {
+.home-section {
     background-image: url('../src/assets/bg/bg.svg');
-} */
+}
