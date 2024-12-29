@@ -5,7 +5,7 @@ import home from '../assets/imageHome/home.svg';
 
 const Home = () => {
   return (
-    <section id="home" className="relative w-full min-h-screen bg-no-repeat bg-cover bg-center z-30 home-section">
+    <section id="home" className="relative w-full min-h-screen bg-no-repeat bg-center z-100 home-section">
       {/* Background Overlay */}
       <div className="absolute inset-0 z-10 opacity-40">
         <img src={bg} alt="Background" className="w-full h-full object-cover" />
