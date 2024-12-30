@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative w-full flex items-center justify-between px-[20px] py-[10px] md:px-[62px] md:py-[20px] bg-white shadow font-body3">
+    <nav className="relative w-full flex items-center justify-between px-[20px] py-[10px] md:px-[62px] md:py-[20px] bg-white shadow font-body3 z-40">
       {/* Logo Section */}
       <div className="flex items-center">
         <img src={Logo} alt="Logo" className="w-[121px] h-[32px] md:w-[140px] md:h-[35px]" />
@@ -48,7 +48,7 @@ const Navbar = () => {
 
       {/* Mobile Menu - แสดงเฉพาะเมื่อ isOpen === true และหน้าจอเล็ก (lg:hidden) */}
       {isOpen && (
-        <div className="absolute top-[70px] left-0 w-full bg-white shadow-md lg:hidden z-10">
+        <div className="absolute top-[53px] left-0 w-full bg-white shadow-md lg:hidden z-100">
           <div className="flex flex-col items-start p-4 space-y-2 text-[#1C1C1C] font-medium text-[16px]">
             <Link to="home" smooth={true} duration={500} onClick={() => setIsOpen(false)} className="block px-2 py-1 hover:text-[#1342eceb] cursor-pointer">Home</Link>
             <Link to="about" smooth={true} duration={500} onClick={() => setIsOpen(false)} className="block px-2 py-1 hover:text-[#1342eceb] cursor-pointer">About Us</Link>
